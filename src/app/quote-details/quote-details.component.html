@@ -9,13 +9,13 @@
     </blockquote>
     <div class="btn-group btn-group-justified" role="group" aria-label="...">
       <div class="btn-group" role="group">
-        <button type="button" id="up" class="btn btn-default"><span class="fa fa-thumbs-up" aria-hidden="true"></span></button>
+        <a class="btn btn-default" href (click)="likeVote()"><span class="fa fa-thumbs-up" aria-hidden="true"></span></a>
       </div>
       <div class="btn-group" role="group">
-        <input type="text" id="vote" value="0" size="1" readonly />
+        {{ votes }}
       </div>
       <div class="btn-group" role="group">
-        <button type="button" id="down" class="btn btn-default"><span class="fa fa-thumbs-down" aria-hidden="true"></span></button>
+        <a class="btn btn-default" href (click)="dislikeVote()"><span class="fa fa-thumbs-down" aria-hidden="true"></span></a>
       </div>
     </div>
   </div>
