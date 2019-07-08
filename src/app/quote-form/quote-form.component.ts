@@ -10,10 +10,11 @@ export class QuoteFormComponent implements OnInit {
   @Output() emitQuote = new EventEmitter()
   quoteLyrics:string
   quoteName:string
+  quoteDate: Date
   theQuote:any
 
   submitQuote( ){
-    this.theQuote = new Quote(this.quoteName, this.quoteLyrics)
+    this.theQuote = new Quote(this.quoteName, this.quoteLyrics, this.quoteDate)
     this.quoteLyrics = ''
     this.quoteName = ''
     this.emitQuote.emit(this.theQuote)
