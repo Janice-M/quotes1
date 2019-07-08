@@ -18,7 +18,7 @@ export class DateCountPipe implements PipeTransform {
     if (dateCounter >= 1) {
       return dateCounter;
     } else {
-      return ("Monday,8th July");
+      return ("Monday,8th July, 2019");
     }
   }
  

@@ -12,12 +12,14 @@
         <a class="btn btn-default" href (click)="likeVote()"><span class="fa fa-thumbs-up" aria-hidden="true"></span></a>
       </div>
       <div class="btn-group" role="group">
-        {{ votes }}
+        {{ upvotes }}
       </div>
       <div class="btn-group" role="group">
         <a class="btn btn-default" href (click)="dislikeVote()"><span class="fa fa-thumbs-down" aria-hidden="true"></span></a>
       </div>
-      
+      <div class="btn-group" role="group">
+        {{ downvotes }}
+      </div>
 <button class="btn btn-info" (click)= 'quoteDelete(true)'>Delete Quote</button>
     </div>
   </div>
