@@ -9,13 +9,13 @@ import { Quote } from "../quote";
 export class QuoteComponent implements OnInit {
 
   
-  quotes = []
+  quotes= []
   addNewQuote(newEntry) {
     this.quotes.push(newEntry)
   }
   deleteQuote(isComplete, index){
     if (isComplete) {
-      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
+      let toDelete = confirm(`Are you sure you want to delete quote?`)
 
       if (toDelete){
         this.quotes.splice(index,1)
