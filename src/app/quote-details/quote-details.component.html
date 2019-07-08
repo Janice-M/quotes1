@@ -3,7 +3,7 @@
       <p>{{quote.quoteLyrics}}</p>
       <footer class="blockquote-footer">
         <small>
-          {{quote.quoteName}} posted on {{goal.completeDate|date}}
+          {{quote.quoteName}} posted on {{quote.completeDate|dateCount}}
         </small>
       </footer>
     </blockquote>
@@ -17,5 +17,7 @@
       <div class="btn-group" role="group">
         <a class="btn btn-default" href (click)="dislikeVote()"><span class="fa fa-thumbs-down" aria-hidden="true"></span></a>
       </div>
+      
+<button (click)= 'quoteDelete(true)'>Delete Quote</button>
     </div>
   </div>
