@@ -48,5 +48,5 @@ This requires users do the following:
 
 ### License
 
-    Copyright (c) 2019 ***Janice-M***
+    Copyright (c) 2019 Janice-M
 
