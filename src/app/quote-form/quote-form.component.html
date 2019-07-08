@@ -1,15 +1,18 @@
 <form (ngSubmit)='submitQuote()'>
 
         <div class="form-group">
-
+<div>
             <label for="lyrics"><b>Lyrics:</b></label>
             <textarea required class="form-control" id="lyrics" [(ngModel)]="quoteLyrics" name="lyrics"  placeholder="Your favourite lyrical quote" rows="4" required></textarea>
-
+<div [hidden]="name.valid|| name.pristine" class= "alert alert-danger" ></div>
+<p>Rafiki, please give us lyrical quotes.</p>
+</div>
         <div class="form-group">
 
                 <label for="name"><b>Author name:</b></label>
                 <input required [(ngModel)]="quoteName" type="text" placeholder="Author name" required class="form-control" id="name" name="author">
-
+<div [hidden]="name.valid|| name.pristine" class= "alert alert-danger" ></div>
+<p> Rafiki, what is your name? </p>
             </div>
         </div>
 
