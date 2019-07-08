@@ -1,0 +1,17 @@
+<form (ngSubmit)='submitQuote()'>
+
+        <div class="form-group">
+
+            <label for="lyrics"><b>Lyrics:</b></label>
+            <textarea class="form-control" id="lyrics" [(ngModel)]="quoteLyrics" name="lyrics"  placeholder="Your favourite lyrical quote" rows="4" required></textarea>
+
+        <div class="form-group">
+
+                <label for="name"><b>Author name:</b></label>
+                <input [(ngModel)]="quoteName" type="text" placeholder="Author name" required class="form-control" id="name" name="author">
+
+            </div>
+        </div>
+
+            <button class="btn btn-info text-center" value = "submit" type="submit">Submit lyrical quote</button>
+    </form>
