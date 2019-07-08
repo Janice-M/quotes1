@@ -1,4 +1,4 @@
-import { Component, HostBinding, OnInit, Input } from '@angular/core';
+import { Component, EventEmitter, OnInit, Input, Output } from '@angular/core';
 import { Quote } from "../quote";
 
 @Component({
@@ -11,6 +11,7 @@ export class QuoteDetailsComponent implements OnInit {
   votes: number;
 
   @Input() quote:Quote
+  @Output() isComplete = new EventEmitter<boolean>();
   vote = 0;
 
   constructor() {

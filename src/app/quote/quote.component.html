@@ -13,7 +13,7 @@
 
         <h3>Last Added lyrical Quote</h3>
         <div *ngFor='let quote of quotes; let i = index'>
-          <app-quote-details [quote]="quote" ></app-quote-details>
+          <app-quote-details [quote]="quote" [quote]='quote' (isComplete) = 'deleteQuote($event,i)' ></app-quote-details>
         </div>
       </div>
 
